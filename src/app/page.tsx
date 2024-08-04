@@ -8,7 +8,7 @@ interface pageProps {
   
 }
 
-const page: FC<pageProps> = ({}) => {
+const Page: FC<pageProps> = ({}) => {
   const [banners, setBanners] = useState(adBanners);
   const [selectedBanner, setSelectedBanner] = useState(null);
   const [isEditOpen, setIsEditOpen] = useState(false);
@@ -56,4 +56,4 @@ const page: FC<pageProps> = ({}) => {
   );
 };
 
-export default page
+export default Page
