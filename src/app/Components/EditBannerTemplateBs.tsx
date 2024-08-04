@@ -18,6 +18,7 @@ const EditBannerTemplateBs: React.FC<EditBannerTemplateBsProps> = ({
 }) => {
   const [editedBanner, setEditedBanner] = useState(banner);
   const [imageURL, setImageURL] = useState<string>("");
+  const [isDisabled, setIsDisabled] = useState<boolean>(false)
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
@@ -47,8 +48,9 @@ const EditBannerTemplateBs: React.FC<EditBannerTemplateBsProps> = ({
         </div>
         <UploadButton
           endpoint="imageUploader"
+          onUploadProgress={() => {setIsDisabled(true)}}
           onClientUploadComplete={(res) => {
-            alert("Upload Completed");
+            setIsDisabled(false)
             setImageURL(res[0].url);
             setEditedBanner({ ...editedBanner, image: res[0].url });
           }}
@@ -82,11 +84,13 @@ const EditBannerTemplateBs: React.FC<EditBannerTemplateBsProps> = ({
         <div className="flex justify-between mt-6">
           <button
             onClick={handleSave}
-            className="px-4 py-2 bg-blue-500 text-white rounded-lg"
+            disabled={isDisabled}
+            className="px-4 py-2 bg-blue-500 text-white rounded-lg disabled:opacity-40"
           >
             Save
           </button>
-          <button onClick={onClose} className="px-4 py-2 border rounded-lg">
+          <button onClick={onClose}
+          className="px-4 py-2 border rounded-lg">
             Cancel
           </button>
         </div>
