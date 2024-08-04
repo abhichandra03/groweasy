@@ -1,0 +1,45 @@
+[
+    {
+      "id": 1,
+      "title": "Ad Banner 1",
+      "description": "This is the first ad banner.",
+      "cta": "Learn More",
+      "image": "https://bannerbot-public.s3.ap-south-1.amazonaws.com/templates/1/square.png"
+    },
+    {
+      "id": 2,
+      "title": "Ad Banner 2",
+      "description": "This is the second ad banner.",
+      "cta": "Shop Now",
+      "image": "https://bannerbot-public.s3.ap-south-1.amazonaws.com/templates/2/square.png"
+    },
+    {
+      "id": 3,
+      "title": "Ad Banner 3",
+      "description": "This is the third ad banner.",
+      "cta": "Shop Now",
+      "image": "https://bannerbot-public.s3.ap-south-1.amazonaws.com/templates/3/square.png"
+    },
+    {
+      "id": 4,
+      "title": "Ad Banner 4",
+      "description": "This is the fourth ad banner.",
+      "cta": "Shop Now",
+      "image": "https://bannerbot-public.s3.ap-south-1.amazonaws.com/templates/4/square.png"
+    },
+    {
+      "id": 5,
+      "title": "Ad Banner 5",
+      "description": "This is the fifth ad banner.",
+      "cta": "Shop Now",
+      "image": "https://bannerbot-public.s3.ap-south-1.amazonaws.com/templates/5/square.png"
+    },
+    {
+      "id": 6,
+      "title": "Ad Banner 6",
+      "description": "This is the sixth ad banner.",
+      "cta": "Shop Now",
+      "image": "https://bannerbot-public.s3.ap-south-1.amazonaws.com/templates/6/square.png"
+    }
+  ]
+  
